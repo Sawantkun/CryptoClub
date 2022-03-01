@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Jakarta-bold";
+  src: url(../media/Fonts/jakarta/PlusJakartaSans-Bold.woff);
+}
+
+@font-face {
+  font-family: "Jakarta-semibold";
+  src: url(../media/Fonts/jakarta/PlusJakartaSans-SemiBold.woff2);
+}
+
+#home-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../media/Images/hero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#home-container .overlay {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  height: 100vh;
+  width: 100%;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home-container .overlay .left {
+  z-index: 2;
+}
+
+#home-container .overlay .left .hero-text {
+  margin-bottom: 6rem;
+}
+
+#home-container .overlay .left .hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 4.4rem;
+  font-family: "Jakarta-bold", sans-serif;
+  color: white;
+}
+
+#home-container .overlay .left .hero-text p {
+  font-size: 1.8rem;
+  font-family: "Jakarta-bold", sans-serif;
+  color: #4b5563;
+  margin: 1.5rem 0;
+}
+
+#home-container .overlay .left .hero-text .btn-container .cta {
+  background-color: #0074e8;
+  padding: 0.8rem 3.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Jakarta-semibold";
+  -webkit-transition: background-color 0.3s ease-in-out 0s;
+  transition: background-color 0.3s ease-in-out 0s;
+}
+
+#home-container .overlay .left .hero-text .btn-container .cta:hover {
+  background-color: #0068d1;
+}
+
+#home-container .overlay .left .hero-text .btn-container .btn-secondary {
+  color: white;
+  padding: 0.8rem 3.8rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: "Jakarta-semibold";
+  margin-left: 1rem;
+  background-color: #374151;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
+}
+
+#home-container .overlay .left .hero-text .btn-container .btn-secondary:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#home-container .overlay .left .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #0068d1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#home-container .overlay .left .more:hover {
+  color: #0074e8;
+}
+
+#home-container .overlay .left .more p {
+  font-size: 1.1rem;
+  font-family: "Jakarta-bold", sans-serif;
+  margin-left: 1rem;
+}
+
+#home-container .overlay .left .more img {
+  height: 25px;
+  width: 25px;
+}
+
+#home-container .overlay .right {
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+#home-container .overlay .right:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#home-container .overlay .right .top img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 500px;
+}
+
+#home-container .overlay .right .bottom {
+  background-color: #374151;
+  margin-top: -5px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+#home-container .overlay .right .bottom .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+#home-container .overlay .right .bottom .description img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+#home-container .overlay .right .bottom .description div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home-container .overlay .right .bottom .description div h4 {
+  color: white;
+  font-family: "Jakarta-semibold";
+}
+
+#home-container .overlay .right .bottom .description div h5 {
+  color: #0068d1;
+  font-family: "Jakarta-semibold";
+  -webkit-transition: color 0.3s ease-in-out 0s;
+  transition: color 0.3s ease-in-out 0s;
+}
+
+#home-container .overlay .right .bottom .description div h5:hover {
+  color: #0074e8;
+}
+
+#home-container .overlay .right .bottom .icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 20px 12px 20px;
+  background-color: #071a2f;
+  color: white;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+nav .logo img {
+  margin-right: 10px;
+  width: 100%;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #eee;
+}
+
+nav .search {
+  margin-left: auto;
+}
+
+nav .search img {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  margin: 13px;
+  margin-left: 16px;
+  opacity: 0.4;
+}
+
+nav .search input {
+  font-size: 0.95rem;
+  margin-right: 20px;
+  outline: none;
+  width: 430px;
+  background: #4c505c;
+  border-radius: 10px;
+  padding: 8px 50px 12px 45px;
+  border: 1px solid #071a2f;
+  position: relative;
+  color: white;
+}
+
+nav .nav-links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-links ul a {
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+  font-weight: 600;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+nav .nav-links ul a:hover {
+  opacity: 1;
+}
+
+nav .nav-icons {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-icons img:last-of-type {
+  margin-left: 40px;
+}
+
+nav .nav-icons img {
+  cursor: pointer;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav .nav-icons img:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,97 @@
+@import "./home";
+
+// IMPORTING FONTS
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// FOR BASIC PAGE SETTINGS
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+// NAVBAR STYLING
+nav {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  align-items: center;
+  padding: 14px 20px 12px 20px;
+  background-color: #071a2f;
+  color: white;
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    img {
+      margin-right: 10px;
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: #eee;
+    }
+  }
+  .search {
+    margin-left: auto;
+    img {
+      cursor: pointer;
+      position: absolute;
+      z-index: 1;
+      margin: 13px;
+      margin-left: 16px;
+      opacity: 0.4;
+    }
+    input {
+      font-size: 0.95rem;
+      margin-right: 20px;
+      outline: none;
+      width: 430px;
+      background: #4c505c;
+      border-radius: 10px;
+      padding: 8px 50px 12px 45px;
+      border: 1px solid #071a2f;
+      position: relative;
+      color: white;
+    }
+  }
+  .nav-links {
+    ul {
+      list-style: none;
+      display: flex;
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 40px;
+        font-weight: 600;
+        opacity: 0.8;
+        transition: opacity 0.2s ease-in-out;
+      }
+      a:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .nav-icons {
+    margin-left: 20px;
+    display: flex;
+    img:last-of-type {
+      margin-left: 40px;
+    }
+    img {
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.3s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
+}
