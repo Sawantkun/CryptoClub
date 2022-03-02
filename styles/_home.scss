@@ -1,16 +1,3 @@
-@font-face {
-  font-family: "Jakarta-bold";
-  src: url(../media/Fonts/jakarta/PlusJakartaSans-Bold.woff);
-}
-@font-face {
-  font-family: "Jakarta-semibold";
-  src: url(../media/Fonts/jakarta/PlusJakartaSans-SemiBold.woff2);
-}
-@font-face {
-  font-family: "Jakarta-medium";
-  src: url(../media/Fonts/jakarta/PlusJakartaSans-Medium.woff2);
-}
-
 #home-container {
   height: 100vh;
   width: 100%;
@@ -175,14 +162,3 @@
     }
   }
 }
-
-// #home-container::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 100vh;
-//   z-index: 1;
-//   width: 100%;
-//   background-color: rgba($color: white, $alpha: 0.7);
-// }
