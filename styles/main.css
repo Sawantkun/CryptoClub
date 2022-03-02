@@ -9,6 +9,11 @@
   src: url(../media/Fonts/jakarta/PlusJakartaSans-SemiBold.woff2);
 }
 
+@font-face {
+  font-family: "Jakarta-medium";
+  src: url(../media/Fonts/jakarta/PlusJakartaSans-Medium.woff2);
+}
+
 #home-container {
   height: 100vh;
   width: 100%;
@@ -33,7 +38,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), white);
   height: 100vh;
   width: 100%;
-  padding: 4rem;
+  padding: 4rem 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,17 +55,20 @@
 }
 
 #home-container .overlay .left .hero-text h1 {
-  font-size: 3.2rem;
+  font-size: 2.7rem;
   line-height: 3.5rem;
+  letter-spacing: 1.8px;
   font-family: "Jakarta-bold", sans-serif;
   color: var(--secondary-color);
 }
 
 #home-container .overlay .left .hero-text p {
-  font-size: 1.8rem;
-  font-family: "Jakarta-bold", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  font-family: "Jakarta-medium", sans-serif;
   color: var(--tertiary-color);
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 3rem 0;
 }
 
 #home-container .overlay .left .hero-text .btn-container .cta {
@@ -71,7 +79,7 @@
   font-size: 1.1rem;
   color: white;
   cursor: pointer;
-  font-family: "Jakarta-semibold";
+  font-family: "Jakarta-bold";
   -webkit-transition: background-color 0.3s ease-in-out 0s;
   transition: background-color 0.3s ease-in-out 0s;
 }
@@ -88,7 +96,7 @@
   border: 1.5px solid #0074e8;
   font-size: 1.1rem;
   cursor: pointer;
-  font-family: "Jakarta-semibold";
+  font-family: "Jakarta-bold";
   margin-left: 1rem;
   background: white;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out 0s;
@@ -110,15 +118,18 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  color: #0068d1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #2f8ff0;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  -webkit-transform: translateY(90px);
-          transform: translateY(90px);
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
 }
 
 #home-container .overlay .left .more:hover {
-  color: #0074e8;
+  color: #0068d1;
 }
 
 #home-container .overlay .left .more p {
@@ -180,7 +191,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.2rem 1rem;
+  padding: 2.4rem 1rem;
   height: 10%;
 }
 
@@ -212,19 +223,19 @@
           justify-content: space-between;
 }
 
-#home-container .overlay .right .bottom .description div h4 {
+#home-container .overlay .right .bottom .description div .upper-text {
   color: var(--secondary-color);
   font-family: "Jakarta-semibold";
 }
 
-#home-container .overlay .right .bottom .description div h5 {
-  color: #0068d1;
+#home-container .overlay .right .bottom .description div .lower-text {
+  color: #2f8ff0;
   font-family: "Jakarta-semibold";
   -webkit-transition: color 0.3s ease-in-out 0s;
   transition: color 0.3s ease-in-out 0s;
 }
 
-#home-container .overlay .right .bottom .description div h5:hover {
+#home-container .overlay .right .bottom .description div .lower-text:hover {
   color: #0074e8;
 }
 
@@ -254,38 +265,13 @@
 }
 
 #notable-drops h1 {
-  font-size: 2rem;
-  margin-top: 3rem;
-  letter-spacing: -0.4px;
+  font-size: 1.5rem;
   color: var(--secondary-color);
+  font-family: "Jakarta-bold";
 }
 
 #notable-drops .test {
   width: 82.5%;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "IBM Plex Sans", sans-serif;
-  scroll-behavior: smooth;
-}
-
-:root {
-  --primary-color: white;
-  --secondary-color: #04111d;
-  --tertiary-color: #363840;
-}
-
-body {
-  position: relative;
-  height: 100%;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 nav {
@@ -301,7 +287,9 @@ nav {
   padding: 14px 20px 12px 20px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: var(--tertiary-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -410,5 +398,29 @@ nav .nav-icons img {
 
 nav .nav-icons img:hover {
   fill: var(--secondary-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: #04111d;
+  --tertiary-color: #363840;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
