@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>CryptoClub</title>
+</head>
+<body>
+     <!-- NAVBAR -->
+     <nav>
+        <div class="logo">
+            <img src="./media/Images/logo.svg" alt="logo">
+            <h1><a href="#">CryptoClub</a></h1>
+        </div>
+        <div class="search">
+            <img src="./Media/Icons/search-svgrepo-com.svg" alt="Search">
+            <input type="search" placeholder="Search items collections and accounts">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Stats</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Create</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+        <img src="./Media/Icons/account-svgrepo-com.svg" alt="account">
+        <img src="./Media/Icons/wallet-svgrepo-com.svg" alt="wallet">
+        </div> 
+    </nav>
+
+    <!-- Home -->
+    <section id="home-container">
+       <div class="overlay">
+        <div class="left">
+            <div class="hero-text">
+                <h1>Discover, collect, and sell <br>extraordinary NFTs</h1>
+                <p>OpenSea is the world's first and <br>largest NFT marketplace</p>
+                <div class="btn-container">
+                    <button class="cta">Explore</button>
+                    <button class="btn-secondary">Create</button>
+                </div>
+            </div>
+            <div class="more">
+                <img src="./media/Icons/play.svg" alt="icon">
+                <p>Learn mode about CryptoClub</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <img src="./media/Images/hero.jpeg" alt="">
+            </div>
+            <div class="bottom">
+                <div class="description">
+                    <img src="./media/Images/girl.jpeg" alt="girl">
+                    <div>
+                        <h4>Fragile II</h4>
+                        <h5>oksanavinnart</h5>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="./media/Icons/info.svg" alt="info">
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section id="notable-drops" class="swiper mySwiper">
+        <h1>Notable Drops</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./media/Images/Afterparty-Promocarrd.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/Images/timepieces-promocard.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/Images/topps-promocard2.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/Images/vries-promocard.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/Images/wegman-promocard.webp" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 50,
+          slidesPerGroup: 1,
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          loop: true,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable:true
+          },
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        });
+      </script>
+      <script src="./scripts/script.js"></script>
+</body>
+</html>
