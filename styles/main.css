@@ -269,7 +269,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 14px 20px 12px 20px;
+  padding: 12px 20px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.5);
@@ -299,48 +299,41 @@ nav .logo img {
 
 nav .logo a {
   text-decoration: none;
+  font-family: "Jakarta-extrabold", sans-serif;
   color: var(--secondary-color);
 }
 
 nav .search {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .search img {
-  cursor: pointer;
   position: absolute;
   z-index: 1;
-  margin: 13px;
+  cursor: text;
   margin-left: 16px;
+  height: 15px;
+  width: 15px;
 }
 
 nav .search input {
   font-size: 0.95rem;
   margin-right: 20px;
   outline: none;
-  width: 430px;
-  border: 0.01px solid rgba(0, 0, 0, 0.171);
+  width: 500px;
+  border: 0.01px solid rgba(51, 48, 48, 0.171);
   background: transparent;
   border-radius: 10px;
-  padding: 8px 50px 12px 45px;
+  padding: 15px 40px;
   position: relative;
   color: var(--tertiary-color);
-}
-
-nav .search input::-webkit-input-placeholder {
-  color: black;
-}
-
-nav .search input:-ms-input-placeholder {
-  color: black;
-}
-
-nav .search input::-ms-input-placeholder {
-  color: black;
-}
-
-nav .search input::placeholder {
-  color: black;
+  font-family: "Jakarta-bold";
 }
 
 nav .nav-links ul {
@@ -357,6 +350,7 @@ nav .nav-links ul a {
   font-weight: 600;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  font-family: "Jakarta-bold";
 }
 
 nav .nav-links ul a:hover {
@@ -388,8 +382,207 @@ nav .nav-icons img:hover {
 #collection-container {
   height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--primary-color);
-  padding: 0rem 8rem;
+  padding: 4rem 8rem;
+}
+
+#collection-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#collection-container .title h2 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  font-family: "Jakarta-bold";
+}
+
+#collection-container .title .duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+#collection-container .title .duration p {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  font-family: "Jakarta-bold";
+  color: #2f8ff0;
+  -webkit-transition: color 0.3s ease-in-out 0s;
+  transition: color 0.3s ease-in-out 0s;
+}
+
+#collection-container .title .duration p:hover {
+  color: #0074e8;
+}
+
+#collection-container .title .duration img {
+  margin-left: 8px;
+}
+
+#collection-container .title .duration div.duration-list {
+  display: block;
+  position: absolute;
+  border-radius: 1rem;
+  width: 15rem;
+  background-color: var(--primary-color);
+  top: 3rem;
+  left: 0;
+  opacity: 0;
+  height: 0;
+  z-index: 2;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  background-color: var(--primary-color);
+}
+
+#collection-container .title .duration div.duration-list ul {
+  list-style: none;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--primary-color);
+}
+
+#collection-container .title .duration div.duration-list ul li {
+  font-family: "Jakarta-bold";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.384);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
+}
+
+#collection-container .title .duration div.duration-list ul li:last-child {
+  border: none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#collection-container .title .duration div.duration-list ul li:first-child {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#collection-container .title .duration div.duration-list ul li:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  background-color: rgba(47, 143, 240, 0.05);
+}
+
+#collection-container .title .duration div.active {
+  opacity: 1;
+  height: auto;
+}
+
+#collection-container .data {
+  margin-top: 3.5rem;
+}
+
+#collection-container .data .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#collection-container .data .container .blockrect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#collection-container .data .container .blockrect .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 44px;
+}
+
+#collection-container .data .container .blockrect .column a {
+  text-decoration: none;
+  color: black;
+  margin: 0.5rem 2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#collection-container .data .container .blockrect .column a:last-child {
+  border: none;
+}
+
+#collection-container .ranking-btn {
+  background-color: #0074e8;
+  padding: 0.8rem 3.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Jakarta-bold";
+  -webkit-transition: background-color 0.3s ease-in-out 0s;
+  transition: background-color 0.3s ease-in-out 0s;
+  margin-top: 2rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+}
+
+#collection-container .ranking-btn:hover {
+  background-color: #0068d1;
+}
+
+@font-face {
+  font-family: "Jakarta-extrabold";
+  src: url(../media/Fonts/jakarta/PlusJakartaSans-ExtraBold.woff2);
 }
 
 @font-face {
@@ -419,7 +612,7 @@ nav .nav-icons img:hover {
 :root {
   --primary-color: white;
   --secondary-color: #04111d;
-  --tertiary-color: #363840;
+  --tertiary-color: rgb(53, 56, 64);
 }
 
 body {

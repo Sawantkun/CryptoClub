@@ -1,3 +1,18 @@
+@mixin cta {
+  background-color: #0074e8;
+  padding: 0.8rem 3.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Jakarta-bold";
+  transition: background-color 0.3s ease-in-out 0s;
+  &:hover {
+    background-color: #0068d1;
+  }
+}
+
 #home-container {
   height: 100vh;
   width: 100%;
@@ -37,18 +52,7 @@
         }
         .btn-container {
           .cta {
-            background-color: #0074e8;
-            padding: 0.8rem 3.8rem;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            color: white;
-            cursor: pointer;
-            font-family: "Jakarta-bold";
-            transition: background-color 0.3s ease-in-out 0s;
-            &:hover {
-              background-color: #0068d1;
-            }
+            @include cta();
           }
           .btn-secondary {
             color: #0074e8;
