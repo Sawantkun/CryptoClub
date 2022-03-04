@@ -117,3 +117,27 @@ const updateUi = (data) => {
   column2.innerHTML = b;
   column3.innerHTML = c;
 };
+
+// Event listeners for categories section drop down menu
+const categoriesText = document.querySelector(".categories-text");
+const categoriesList = document.querySelector(".categories-list");
+const item1 = document.querySelector(".item1");
+const item2 = document.querySelector(".item2");
+const item3 = document.querySelector(".item3");
+const item4 = document.querySelector(".item4");
+categoriesText.addEventListener("click", (e) => {
+  categoriesList.classList.toggle("active");
+});
+
+item1.addEventListener("click", () => {
+  categoriesList.classList.toggle("active");
+});
+item2.addEventListener("click", () => {
+  categoriesList.classList.toggle("active");
+});
+item3.addEventListener("click", () => {
+  categoriesList.classList.toggle("active");
+});
+item4.addEventListener("click", () => {
+  categoriesList.classList.toggle("active");
+});

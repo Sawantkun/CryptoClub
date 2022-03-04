@@ -1,0 +1,53 @@
+#create-nfts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fbfdff;
+  h2 {
+    margin-bottom: 5rem;
+    font-family: "Jakarta-bold";
+  }
+  .C-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 170px;
+    .Ctile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 270px;
+      h6 {
+        margin: 16px 0 4px 0;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        font-family: "Jakarta-bold";
+      }
+      p {
+        opacity: 0.8;
+        line-height: 23px;
+        font-weight: 900;
+        font-size: 1rem;
+        font-family: "Jakarta-bold";
+        span {
+          color: #1a5590;
+          font-family: "Jakarta-bold";
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@
   height: 80%;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -40,4 +40,11 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 20px;
+}
+
+.swiper-button-prev {
+  transform: translateX(-30px);
+}
+.swiper-button-next {
+  transform: translateX(30px);
 }
