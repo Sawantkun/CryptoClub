@@ -744,6 +744,36 @@ nav .nav-icons img:hover {
   background-color: #0068d1;
 }
 
+.company-showcase {
+  width: 100%;
+  height: 120px;
+  background-color: #2181e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.company-showcase img {
+  height: 130px;
+  width: 130px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.company-showcase img:hover {
+  opacity: 1;
+}
+
 @font-face {
   font-family: "Jakarta-extrabold";
   src: url(../media/Fonts/jakarta/PlusJakartaSans-ExtraBold.woff2);
