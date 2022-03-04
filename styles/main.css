@@ -583,7 +583,7 @@ nav .nav-icons img:hover {
 }
 
 .browse-category {
-  height: 150vh;
+  height: 135vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,7 +598,7 @@ nav .nav-icons img:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 4rem 0rem;
+  padding: 3.8rem 12rem;
 }
 
 .browse-category h1 {
@@ -612,7 +612,6 @@ nav .nav-icons img:hover {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   height: 500px;
-  width: 73%;
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   row-gap: 3rem;
@@ -663,6 +662,86 @@ nav .nav-icons img:hover {
   font-family: "Jakarta-bold";
   font-size: 1.3rem;
   color: var(--tertiary-color);
+}
+
+.video-section {
+  height: 130vh;
+  width: 100%;
+  background-color: #f2fbff;
+  padding: 0rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.video-section .video-container {
+  position: relative;
+  width: 100%;
+  background-image: url("../media/Images/video-background.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.video-section .video-container iframe {
+  width: 90%;
+  height: 70vh;
+  z-index: 30;
+}
+
+.video-section .video-container p {
+  font-size: 0.8rem;
+  font-family: "Jakarta-medium";
+  margin-top: 10px;
+  color: #757575;
+  word-spacing: 3px;
+}
+
+.video-section .text-container h1 {
+  font-family: "Jakarta-bold";
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.video-section .text-container p {
+  font-family: "Jakarta-medium";
+  font-size: 1.1rem;
+  color: #757575;
+  word-spacing: 2px;
+}
+
+.video-section .button-container {
+  margin-top: 3rem;
+}
+
+.video-section .button-container a {
+  background-color: #0074e8;
+  padding: 0.8rem 3.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Jakarta-bold";
+  -webkit-transition: background-color 0.3s ease-in-out 0s;
+  transition: background-color 0.3s ease-in-out 0s;
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+}
+
+.video-section .button-container a:hover {
+  background-color: #0068d1;
 }
 
 @font-face {

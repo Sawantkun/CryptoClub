@@ -1,0 +1,53 @@
+.video-section {
+  height: 130vh;
+  width: 100%;
+  background-color: #f2fbff;
+  padding: 0rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  .video-container {
+    position: relative;
+    width: 100%;
+    background-image: url("../media/Images/video-background.svg");
+    background-position: center;
+    background-size: contain;
+    iframe {
+      width: 90%;
+      height: 70vh;
+      z-index: 30;
+    }
+    p {
+      font-size: 0.8rem;
+      font-family: "Jakarta-medium";
+      margin-top: 10px;
+      color: rgb(117, 117, 117);
+      word-spacing: 3px;
+    }
+  }
+
+  .text-container {
+    h1 {
+      font-family: "Jakarta-bold";
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary-color);
+    }
+    p {
+      font-family: "Jakarta-medium";
+      font-size: 1.1rem;
+      color: rgb(117, 117, 117);
+      word-spacing: 2px;
+    }
+  }
+  .button-container {
+    margin-top: 3rem;
+    a {
+      @include cta();
+      text-decoration: none;
+      padding: 1rem 1.2rem;
+    }
+  }
+}

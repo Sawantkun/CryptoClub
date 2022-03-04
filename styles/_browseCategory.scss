@@ -1,12 +1,11 @@
 .browse-category {
-  height: 150vh;
+  height: 135vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-
-  padding: 4rem 0rem;
+  padding: 3.8rem 12rem;
   h1 {
     font-family: "Jakarta-bold";
   }
@@ -15,7 +14,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 500px;
-    width: 73%;
     column-gap: 1rem;
     row-gap: 3rem;
     .card {
