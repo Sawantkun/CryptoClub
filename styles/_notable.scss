@@ -14,4 +14,33 @@
   .container {
     width: 82.5%;
   }
+  .swiper-slide {
+    button {
+      color: white;
+      background: transparent;
+      border: 2px solid white;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 5px 10px;
+      font-family: "Jakarta-bold";
+      letter-spacing: 1px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+    }
+    h2 {
+      position: absolute;
+      bottom: 12%;
+      left: 5%;
+    }
+    color: white;
+    backdrop-filter: blur(3px);
+    p {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      color: white;
+      backdrop-filter: blur(3px);
+    }
+  }
 }

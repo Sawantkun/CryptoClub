@@ -23,8 +23,8 @@ items.forEach((item) => {
         method: "GET",
         headers: {
           "x-rapidapi-host": "top-nft-sales.p.rapidapi.com",
-          "x-rapidapi-key": "",
-          // 1b1d49e2bfmsh43c67eb04a26f64p1b2ed4jsn837ba8ff3ded
+          "x-rapidapi-key":
+            "1b1d49e2bfmsh43c67eb04a26f64p1b2ed4jsn837ba8ff3ded",
         },
       }
     )
@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     method: "GET",
     headers: {
       "x-rapidapi-host": "top-nft-sales.p.rapidapi.com",
-      "x-rapidapi-key": "9b194bfefamshf1bc8a9bd5bb506p10e0bbjsn8e11aa1070ae",
+      "x-rapidapi-key": "1b1d49e2bfmsh43c67eb04a26f64p1b2ed4jsn837ba8ff3ded",
     },
   })
     .then((response) => response.json())
