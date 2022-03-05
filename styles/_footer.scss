@@ -1,0 +1,185 @@
+#footer {
+  background-color: #1868b7;
+  height: 120vh;
+  width: 100%;
+  padding: 50px 120px 0px 120px;
+  color: white;
+  font-family: "Jakarta-bold";
+
+  .Fcontainer1 {
+    display: flex;
+    padding-bottom: 50px;
+    font-family: "Jakarta-bold";
+    .signup {
+      color: white;
+      width: 50%;
+      h2,
+      p {
+        font-family: "Jakarta-bold";
+        padding-bottom: 15px;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-family: "Jakarta-medium";
+        font-size: 1.1rem;
+      }
+      form {
+        display: flex;
+        align-items: center;
+
+        input {
+          padding: 15px 200px 15px 20px;
+          border-radius: 10px;
+          background: transparent;
+          color: rgba(58, 58, 58, 0.623) !important;
+          border: none;
+          font-family: "Jakarta-bold";
+          background-color: white;
+        }
+        input::placeholder {
+          color: rgba(58, 58, 58, 0.623) !important;
+          font-size: 1rem;
+          color: rgb(0, 38, 255);
+          font-family: "Jakarta-medium";
+        }
+        input:hover {
+          outline: none;
+        }
+        input:focus {
+          outline: none;
+        }
+        button {
+          cursor: pointer;
+          border: 1px;
+          border-radius: 10px;
+          color: white;
+          font-size: 1rem;
+          background-color: #228ef9;
+          padding: 14px 30px;
+          margin-left: 20px;
+          font-family: "Jakarta-bold";
+          transition: all 0.3s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        button:hover {
+          background-color: #2b92fa;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 10px;
+        }
+      }
+    }
+    .socials {
+      width: 35%;
+      display: flex;
+      margin-left: 70px;
+      flex-direction: column;
+      font-family: "Jakarta-bold";
+      h2 {
+        font-family: "Jakarta-bold";
+        padding-bottom: 20px;
+      }
+      .socialicons {
+        display: flex;
+        justify-content: space-between;
+        img {
+          cursor: pointer;
+          background-color: #228ef9;
+          transition: all 0.3s ease-in-out;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        img:hover {
+          background-color: #2b92fa;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 10px;
+        }
+      }
+    }
+  }
+  .Fcontainer2 {
+    padding: 70px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jakarta-bold";
+    .opensea {
+      width: 30%;
+      height: 100%;
+      margin-bottom: auto;
+      h2 {
+        margin-top: 5px;
+        font-family: "Jakarta-bold";
+      }
+      p {
+        margin-top: 5px;
+        line-height: 25px;
+        font-family: "Jakarta-medium";
+      }
+    }
+    .footerinfo {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 50px;
+      width: 60%;
+      margin-left: auto;
+      .info {
+        h1 {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+          font-family: "Jakarta-bold";
+        }
+        .stats {
+          margin-top: 50px;
+        }
+        ul {
+          list-style: none;
+          li {
+            padding: 5px 0;
+            a {
+              text-decoration: none;
+              color: white;
+              font-family: "Jakarta-medium";
+            }
+          }
+        }
+      }
+    }
+  }
+  .footerend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    .copyright {
+      a {
+        font-size: 0.9rem;
+        color: #eee;
+        text-decoration: none;
+        font-family: "Jakarta-medium";
+      }
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-left: 10px;
+        a {
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: white;
+          font-family: "Jakarta-medium";
+        }
+      }
+    }
+  }
+}
+.line {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.623);
+  width: 100%;
+  opacity: 0.4;
+}
+a:hover {
+  color: white;
+}
